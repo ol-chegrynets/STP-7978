@@ -20,9 +20,14 @@
     "vite": "^4.5.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "author": "team-11",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.4.0",
+    "axios": "^1.7.9",
+    "basiclightbox": "^1.0.0-beta.0",
+    "izitoast": "^1.4.0",
+    "swiper": "^11.2.4",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
