@@ -19,6 +19,7 @@
   font-family: 'Alegreya Sans SC', sans-serif;
   // font-family: "Prompt",  sans-serif;
   font-size: 14px;
+
   line-height: 21.17px;
   font-weight: 400;
 
@@ -35,14 +36,6 @@
     font-size: 18px;
   }
 }
-.container {
-  margin: 0 auto;
-  padding: 32px 16px;
-
-  @include media(desktop) {
-    padding: 80px 80px;
-  }
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,4 +47,14 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding: 0 80px;
+  }
 }
