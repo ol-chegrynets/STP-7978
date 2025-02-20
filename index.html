@@ -4,31 +4,110 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Prompt&display=swap"
+      rel="stylesheet"
+    />
     <title>Blaze Union</title>
     
     <script type="module" crossorigin src="/STP-7978/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/STP-7978/assets/index-c0111b34.css">
+    <link rel="modulepreload" crossorigin href="/STP-7978/assets/vendor-3ce0ac9c.js">
+    <link rel="stylesheet" href="/STP-7978/assets/vendor-7c8ef494.css">
+    <link rel="stylesheet" href="/STP-7978/assets/index-1b55b78c.css">
   </head>
+
   <body>
     <header class="header">
+  <a href="#home" class="logo-link">
+    <img class="logo" src="img/logo.png" alt="Logo" />
+  </a>
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <!-- <a href="./page-2.html" class="nav-link">Page 2</a> -->
+        <a href="#home" class="nav-link">Home</a>
       </li>
-
       <li class="nav-item">
-        <!-- <a href="./page-3.html" class="nav-link">Page 3</a> -->
+        <a href="#about" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#how-to-play" class="nav-link">How to Play</a>
+      </li>
+      <li class="nav-item">
+        <a href="#why-us" class="nav-link">Why Us</a>
+      </li>
+      <li class="nav-item">
+        <a href="#reviews" class="nav-link">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a href="#faq" class="nav-link">FAQ</a>
       </li>
     </ul>
   </nav>
+  <button type="button" class="menu-open">
+    <img src="icons/menu-burger.png" alt="Menu Icon" width="30" height="30" />
+  </button>
 </header>
+<div class="header-dropdown">
+  <button type="button" class="menu-close">
+    <img src="icons/close.png" alt="Close Icon" width="24" height="24" />
+  </button>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a href="#home" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="#about" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+      <a href="#how-to-play" class="nav-link">How to Play</a>
+    </li>
+    <li class="nav-item">
+      <a href="#why-us" class="nav-link">Why Us</a>
+    </li>
+    <li class="nav-item">
+      <a href="#reviews" class="nav-link">Reviews</a>
+    </li>
+    <li class="nav-item">
+      <a href="#gallery" class="nav-link">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a href="#faq" class="nav-link">FAQ</a>
+    </li>
+  </ul>
+</div>
+
 
     <main>
-      <section>
-  <h1>Blaze Union</h1>
-  <p>Forge Your Path to Glory in Blaze Union!</p>
-  <button>google</button>
+      <section class="hero" id="hero">
+  <div class="container hero-container">
+    <h1 class="hero-title">Blaze Union</h1>
+    <p class="hero-text">Forge Your Path to Glory in Blaze Union!</p>
+    <!-- <button
+      target="_blank"
+      type="button"
+      class="hero-button"
+      onclick="window.location = 'https://play.google.com/store/apps/details?id=jp.co.sting.blaze_union&hl=en&gl=us';"
+    ></button> -->
+
+    <a
+      class="hero-button"
+      target="_blank"
+      href="https://play.google.com/store/apps/details?id=jp.co.sting.blaze_union&hl=en&gl=us"
+    >
+      <img
+        border="0"
+        alt="google"
+        src="../img/hero/google.png"
+        width="200"
+        height="600"
+      />
+    </a>
+  </div>
 </section>
 
       
@@ -36,14 +115,140 @@
       
       
       
+      <section id="reviews" class="review section">
+  <h2 class="review-title">Reviews</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="parallax-bg" data-swiper-parallax="50%"></div>
+        <div class="content">
+          <p class="review-text">
+            "An absolute gem! The strategy elements are deep yet easy to grasp,
+            and the story keeps me engaged for hours. Love the hero variety!"
+          </p>
+          <p class="review-name">Sophia R.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="parallax-bg" data-swiper-parallax="50%"></div>
+        <div class="content">
+          <p class="review-text">
+            "The progression system is fantastic, and the graphics are
+            top-notch. The in-game purchases can be a bit pricey, but overall,
+            it’s an amazing game!"
+          </p>
+          <p class="review-name">Chris B.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="parallax-bg" data-swiper-parallax="50%"></div>
+        <div class="content">
+          <p class="review-text">
+            "I’ve played many tactical RPGs, but Blaze Union stands out with its
+            unique approach to unit formation and ability combinations. However,
+            matchmaking in PvP could be improved."
+          </p>
+          <p class="review-name">Daniel T.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="parallax-bg" data-swiper-parallax="50%"></div>
+        <div class="content">
+          <p class="review-text">
+            "Blaze Union is more than just a strategy game—it’s an adventure.
+            The characters have depth, and the battles require real tactical
+            thinking. Some stages can be quite difficult, but that’s part of the
+            fun!"
+          </p>
+          <p class="review-name">Elena K.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="parallax-bg" data-swiper-parallax="50%"></div>
+        <div class="content">
+          <p class="review-text">
+            "Stunning visuals and fluid gameplay. The alliance system adds a
+            whole new level of interaction, making battles even more intense.
+            Could use more events, though!"
+          </p>
+          <p class="review-name">Jake M.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       
-      
-      
+      <section id="faq" class="section faq">
+  <h2>FAQ</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-header">
+        What is Blaze Union?
+        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+      </button>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Blaze Union is a tactical RPG where players recruit heroes, engage in
+          turn-based battles, and lead their army to victory in an immersive
+          fantasy world.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Is the game free to play?
+        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+      </button>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Yes, Blaze Union is free to play, with optional in-game purchases
+          available.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Can I play offline?
+        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+      </button>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Certain features are available offline, but an internet connection is
+          required for PvP battles and events.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">
+        How do I improve my team?
+        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+      </button>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Upgrade your heroes, equip them with powerful artifacts, and refine
+          your battle strategies to enhance your team’s performance.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Are there regular updates?
+        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+      </button>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Yes! The game receives frequent updates with new heroes, events, and
+          game modes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
     </main>
 
-    
     
 
     
