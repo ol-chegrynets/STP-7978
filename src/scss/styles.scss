@@ -17,6 +17,9 @@
 :root {
   font-family: Prompt, Avenir, Helvetica, Arial, sans-serif;
   font-size: 14px;
+  // font-family: 'Alegreya Sans SC', sans-serif;
+  // font-family: "Prompt",  sans-serif;
+  // line-height: 21.17px;
   font-weight: 400;
 
   color: #fdfcfc;
@@ -28,4 +31,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 32px 16px;
+
+  @include media(desktop) {
+    padding: 80px 80px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
