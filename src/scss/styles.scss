@@ -1,3 +1,4 @@
+@import './common/global.scss';
 @import './header.scss';
 @import './hero.scss';
 @import './about.scss';
@@ -11,21 +12,22 @@
 @import './faq.scss';
 @import './footer.scss';
 
-@import './mobile-menu.scss';
-
 @import './pages.scss';
 
 :root {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  // font-family: "Prompt",  sans-serif;
+  font-family: Prompt, Avenir, Helvetica, Arial, sans-serif;
   font-size: 14px;
 
-  line-height: 21.17px;
+  // font-family: 'Alegreya Sans SC', sans-serif;
+  // font-family: "Prompt",  sans-serif;
+  // line-height: 21.17px;
+
   font-weight: 400;
 
   color: #fdfcfc;
   background-color: #1d0000;
 
+  overflow-x: hidden;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
