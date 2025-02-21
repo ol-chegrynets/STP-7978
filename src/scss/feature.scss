@@ -2,39 +2,39 @@
   display: flex;
   flex-direction: column;
 }
-.section-title {
+.feature-section-title {
   line-height: normal;
 }
-.list {
+.feature-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
   text-align: start;
 }
-.item {
+.feature-item {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.item:nth-child(even) {
+.feature-item:nth-child(even) {
   text-align: end;
 }
-.wrapper {
+.feature-wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.block-text {
+.feature-block-text {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.title {
+.feature-title {
   font-size: 26px;
   font-style: normal;
   color: $_title_color;
 }
-.text {
+.feature-text {
   font-family: Prompt;
   font-size: 14px;
   font-style: normal;
@@ -42,39 +42,41 @@
   color: $_header_color;
 }
 
-.image {width: 375px;
+.feature-image {
+  width: 375px;
   height: 238px;
 }
 @include media(desktop) {
-  .list {
+  .feature-list {
     gap: 40px;
   }
-  .item {
+  .feature-item {
     flex-direction: row;
     justify-content: space-between;
   }
-  .item:nth-child(even) {
+  .feature-item:nth-child(even) {
     text-align: end;
   }
-  .item:nth-child(odd) {
+  .feature-item:nth-child(odd) {
     flex-direction: row-reverse;
   }
-  .wrapper {
+  .feature-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 28px 20px;
   }
 
-  .title {
+  .feature-title {
     font-size: 36px;
   }
-  .text {
+  .feature-text {
     font-size: 18px;
     letter-spacing: 0.09px;
   }
 
-  .image {width: 490px;
+  .feature-image {
+    width: 490px;
     height: 300px;
   }
 }
