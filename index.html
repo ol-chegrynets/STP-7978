@@ -15,42 +15,44 @@
     <script type="module" crossorigin src="/STP-7978/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-7978/assets/vendor-3ce0ac9c.js">
     <link rel="stylesheet" href="/STP-7978/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/STP-7978/assets/index-eb03f398.css">
+    <link rel="stylesheet" href="/STP-7978/assets/index-33e8f8cd.css">
   </head>
 
   <body>
     <header class="header">
-  <a href="#home" class="logo-link">
-    <img class="logo" src="img/logo.png" alt="Logo" />
-  </a>
-   <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#home" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#about" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#how-to-play" class="nav-link">How to Play</a>
-      </li>
-      <li class="nav-item">
-        <a href="#why-us" class="nav-link">Why Us</a>
-      </li>
-      <li class="nav-item">
-        <a href="#reviews" class="nav-link">Reviews</a>
-      </li>
-      <li class="nav-item">
-        <a href="#gallery" class="nav-link">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a href="#faq" class="nav-link">FAQ</a>
-      </li>
-    </ul>
-  </nav>
-  <button type="button" class="menu-open">
-    <img src="icons/menu-burger.png" alt="Menu Icon" width="30" height="30" />
-  </button>
+  <div class="header-container">
+    <a href="#home" class="logo-link">
+      <img class="logo" src="img/logo.png" alt="Logo" />
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#how-to-play" class="nav-link">How to Play</a>
+        </li>
+        <li class="nav-item">
+          <a href="#why-us" class="nav-link">Why Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="menu-open">
+      <img src="icons/menu-burger.png" alt="Menu Icon" width="30" height="30" />
+    </button>
+  </div>
 </header>
 <div class="header-dropdown">
   <button type="button" class="menu-close">
@@ -103,8 +105,73 @@
   </div>
 </section>
 
-      
-      
+      <section id="about" class="section">
+  <div class="about-flex about-container">
+    <div class="about-text-container">
+      <h2 class="about-title">About the Game</h2>
+      <p class="about-text">
+        Blaze Union is a tactical role-playing game (RPG) that immerses players
+        in a world of epic battles, strategic formations, and thrilling
+        conquests. As the leader of a rising army, you must build your forces,
+        outmaneuver rivals, and shape the destiny of your kingdom.
+      </p>
+      <p>
+        Master deep combat mechanics, recruit legendary heroes, and customize
+        your strategies to triumph in battle. Every decision you make will
+        impact your journey—from forging alliances to leading massive armies in
+        the heat of war. Will you rise as the ultimate commander, or will your
+        enemies seize control? Prepare to ignite the battlefield and carve your
+        legend in Blaze Union!
+      </p>
+    </div>
+    <div class="about-picture-container">
+      <picture>
+        <source
+          srcset="
+            img/about/about-desc.png        1x,
+            img/about/about-desc.png@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="img/about/about-mob.png 1x, img/about/about-mob.png@2x.jpg 2x"
+          media="(min-width: 280px)"
+        />
+        <img
+          class="about-picture"
+          src="img/about/about-desc.png"
+          alt="game hero"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container-description">
+    <h2>Description</h2>
+    <div class="description-text-container">
+      <p class="description-text">
+        Blaze Union is a tactical role-playing game (RPG) that immerses players
+        in a world of epic battles, strategic formations, and thrilling
+        conquests. As the leader of a rising army, you must build your forces,
+        outmaneuver rivals, and shape the destiny of your kingdom.
+      </p>
+      <p class="description-text-second">
+        Master deep combat mechanics, recruit legendary heroes, and customize
+        your strategies to triumph in battle. Every decision you make will
+        impact your journey—from forging alliances to leading massive armies in
+        the heat of war. Will you rise as the ultimate commander, or will your
+        enemies seize control?<br />Prepare to ignite the battlefield and carve
+        your legend in Blaze Union!
+      </p>
+      <p class="description-text-accent">
+        Prepare to ignite the battlefield and carve your legend in Blaze Union!
+      </p>
+    </div>
+  </div>
+</section>
+
       <section class="how=-to-play">
   <div class="container how-container">
     <h2 class="section-title">How to Play</h2>
@@ -294,63 +361,66 @@
 </section>
 
       
-      <section id="reviews" class="review section">
-  <h2 class="review-title">Reviews</h2>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="parallax-bg" data-swiper-parallax="50%"></div>
-        <div class="content">
-          <p class="review-text">
-            "An absolute gem! The strategy elements are deep yet easy to grasp,
-            and the story keeps me engaged for hours. Love the hero variety!"
-          </p>
-          <p class="review-name">Sophia R.</p>
+      <section id="reviews" class="section">
+  <div class="review-container">
+    <h2 class="review-title">Reviews</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="parallax-bg" data-swiper-parallax="50%"></div>
+          <div class="content">
+            <p class="review-text">
+              "An absolute gem! The strategy elements are deep yet easy to
+              grasp, and the story keeps me engaged for hours. Love the hero
+              variety!"
+            </p>
+            <p class="review-name">Sophia R.</p>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="parallax-bg" data-swiper-parallax="50%"></div>
-        <div class="content">
-          <p class="review-text">
-            "The progression system is fantastic, and the graphics are
-            top-notch. The in-game purchases can be a bit pricey, but overall,
-            it&apos;s an amazing game!"
-          </p>
-          <p class="review-name">Chris B.</p>
+        <div class="swiper-slide">
+          <div class="parallax-bg" data-swiper-parallax="50%"></div>
+          <div class="content">
+            <p class="review-text">
+              "The progression system is fantastic, and the graphics are
+              top-notch. The in-game purchases can be a bit pricey, but overall,
+              it&apos;s an amazing game!"
+            </p>
+            <p class="review-name">Chris B.</p>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="parallax-bg" data-swiper-parallax="50%"></div>
-        <div class="content">
-          <p class="review-text">
-            "I’ve played many tactical RPGs, but Blaze Union stands out with its
-            unique approach to unit formation and ability combinations. However,
-            matchmaking in PvP could be improved."
-          </p>
-          <p class="review-name">Daniel T.</p>
+        <div class="swiper-slide">
+          <div class="parallax-bg" data-swiper-parallax="50%"></div>
+          <div class="content">
+            <p class="review-text">
+              "I’ve played many tactical RPGs, but Blaze Union stands out with
+              its unique approach to unit formation and ability combinations.
+              However, matchmaking in PvP could be improved."
+            </p>
+            <p class="review-name">Daniel T.</p>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="parallax-bg" data-swiper-parallax="50%"></div>
-        <div class="content">
-          <p class="review-text">
-            "Blaze Union is more than just a strategy game—it’s an adventure.
-            The characters have depth, and the battles require real tactical
-            thinking. Some stages can be quite difficult, but that’s part of the
-            fun!"
-          </p>
-          <p class="review-name">Elena K.</p>
+        <div class="swiper-slide">
+          <div class="parallax-bg" data-swiper-parallax="50%"></div>
+          <div class="content">
+            <p class="review-text">
+              "Blaze Union is more than just a strategy game—it’s an adventure.
+              The characters have depth, and the battles require real tactical
+              thinking. Some stages can be quite difficult, but that’s part of
+              the fun!"
+            </p>
+            <p class="review-name">Elena K.</p>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="parallax-bg" data-swiper-parallax="50%"></div>
-        <div class="content">
-          <p class="review-text">
-            "Stunning visuals and fluid gameplay. The alliance system adds a
-            whole new level of interaction, making battles even more intense.
-            Could use more events, though!"
-          </p>
-          <p class="review-name">Jake M.</p>
+        <div class="swiper-slide">
+          <div class="parallax-bg" data-swiper-parallax="50%"></div>
+          <div class="content">
+            <p class="review-text">
+              "Stunning visuals and fluid gameplay. The alliance system adds a
+              whole new level of interaction, making battles even more intense.
+              Could use more events, though!"
+            </p>
+            <p class="review-name">Jake M.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -359,68 +429,70 @@
 
       
       
-      <section id="faq" class="section faq">
-  <h2>FAQ</h2>
-  <div class="accordion">
-    <div class="accordion-item">
-      <button class="accordion-header">
-        What is Blaze Union?
-        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
-      </button>
-      <div class="accordion-content">
-        <p class="accordion-text">
-          Blaze Union is a tactical RPG where players recruit heroes, engage in
-          turn-based battles, and lead their army to victory in an immersive
-          fantasy world.
-        </p>
+      <section id="faq" class="section">
+  <div class="faq-container">
+    <h2>FAQ</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          What is Blaze Union?
+          <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+        </button>
+        <div class="accordion-content">
+          <p class="accordion-text">
+            Blaze Union is a tactical RPG where players recruit heroes, engage
+            in turn-based battles, and lead their army to victory in an
+            immersive fantasy world.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-header">
-        Is the game free to play?
-        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
-      </button>
-      <div class="accordion-content">
-        <p class="accordion-text">
-          Yes, Blaze Union is free to play, with optional in-game purchases
-          available.
-        </p>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Is the game free to play?
+          <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+        </button>
+        <div class="accordion-content">
+          <p class="accordion-text">
+            Yes, Blaze Union is free to play, with optional in-game purchases
+            available.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-header">
-        Can I play offline?
-        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
-      </button>
-      <div class="accordion-content">
-        <p class="accordion-text">
-          Certain features are available offline, but an internet connection is
-          required for PvP battles and events.
-        </p>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Can I play offline?
+          <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+        </button>
+        <div class="accordion-content">
+          <p class="accordion-text">
+            Certain features are available offline, but an internet connection
+            is required for PvP battles and events.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-header">
-        How do I improve my team?
-        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
-      </button>
-      <div class="accordion-content">
-        <p class="accordion-text">
-          Upgrade your heroes, equip them with powerful artifacts, and refine
-          your battle strategies to enhance your team’s performance.
-        </p>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          How do I improve my team?
+          <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+        </button>
+        <div class="accordion-content">
+          <p class="accordion-text">
+            Upgrade your heroes, equip them with powerful artifacts, and refine
+            your battle strategies to enhance your team’s performance.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-header">
-        Are there regular updates?
-        <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
-      </button>
-      <div class="accordion-content">
-        <p class="accordion-text">
-          Yes! The game receives frequent updates with new heroes, events, and
-          game modes.
-        </p>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Are there regular updates?
+          <img src="icons/arrow-down.png" alt="Arrow down" class="icon" />
+        </button>
+        <div class="accordion-content">
+          <p class="accordion-text">
+            Yes! The game receives frequent updates with new heroes, events, and
+            game modes.
+          </p>
+        </div>
       </div>
     </div>
   </div>
