@@ -1,6 +1,14 @@
 .header {
   height: 76px;
   position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: $_main_bg_color;
+}
+
+.header-container {
+  position: fixed;
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -8,8 +16,6 @@
   justify-content: space-between;
   padding: 8px 20px;
   top: 0;
-  z-index: 100;
-  background-color: $_main_bg_color;
   @include media(desktop) {
     padding-left: 80px;
     padding-right: 140px;
@@ -30,13 +36,14 @@
 
 .nav {
   @include media(to-desktop) {
+    display: block;
     display: none;
+    visibility: hidden;
   }
   margin: auto;
 }
 
 .nav-list {
-  font-family: Alegreya;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -88,9 +95,4 @@
   background: transparent;
   border: none;
   cursor: pointer;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  // color: $_header_accent_color;
 }

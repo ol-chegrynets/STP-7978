@@ -1,0 +1,47 @@
+.container-description {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+.description-text-container {
+  max-width: 646px;
+  margin: 0 auto;
+}
+
+.description-text {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.description-text-second {
+  margin-bottom: 28px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.description-text-accent {
+  min-width: 323px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: $_yellow_color;
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}

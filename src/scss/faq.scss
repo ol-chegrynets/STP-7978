@@ -1,10 +1,10 @@
 .section {
-  &.faq {
+  @include media(to-desktop) {
     padding-bottom: 72px;
   }
 }
 
-.faq {
+.faq-container {
   padding-left: 16px;
   padding-right: 16px;
   max-width: 1200px;
@@ -24,7 +24,7 @@
 }
 
 .accordion-header {
-  font-family: Alegreya, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Alegreya Sans SC, Avenir, Helvetica, Arial, sans-serif;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -50,6 +50,7 @@
 }
 
 .accordion-text {
+  font-family: 'Prompt', sans-serif;
   margin-top: 12px;
 
   @include media(desktop) {

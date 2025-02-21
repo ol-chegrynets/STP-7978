@@ -1,29 +1,33 @@
 body {
-    margin: 0;
-    padding-top: 76px;
+  margin: 0;
+  padding-top: 76px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 51px;
+  color: $_yellow_color;
+  margin-bottom: 28px;
+  margin-top: 0;
+
+  @include media(desktop) {
+    font-weight: 300;
+    font-size: 64px;
+    letter-spacing: -0.01em;
+    margin-bottom: 40px;
   }
-  
-  h2 {
-    font-family: Alegreya, Avenir, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 51px;
-    color: $_yellow_color;
-    margin-bottom: 28px;
-  
-    @include media(desktop) {
-      font-weight: 300;
-      font-size: 64px;
-      letter-spacing: -0.01em;
-      margin-bottom: 40px;
-    }
+}
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
-  
-  .section {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    @include media(desktop) {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-  }
+}
+
+p {
+  font-family: 'Prompt', sans-serif;
+}
