@@ -1,0 +1,64 @@
+.section-quests {
+  background-image: url('../img/quests/rectangle.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 70px 16px 0 16px;
+
+  width: 375px;
+  height: 238px;
+  margin: 20px auto;
+}
+@media only screen and (min-resolution: 192dpi) and (max-width: 1199px) {
+  .section-quests {
+    background-image: url('../img/quests/rectangle@2x.png');
+  }
+}
+.quests-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.title {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.032px;
+  color: $_main_color;
+}
+.text {
+  font-family: Prompt;
+  line-height: normal;
+  letter-spacing: 0.035px;
+}
+@include media(desktop) {
+  .section-quests {
+    background-image: url('../img/quests/rectangle-desk.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 34px;
+
+    width: 1200px;
+    height: 340px;
+  }
+  @media only screen and (min-resolution: 192dpi) {
+    .section-quests {
+      background-image: url('../img/quests/rectangl-desk@2x.png');
+    }
+  }
+  .quests-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding: 0 345px;
+    text-align: center;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+  }
+  .text {
+    letter-spacing: 0.09px;
+  }
+}
