@@ -9,7 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 517px;
-  padding-bottom: 32px;
 }
 @media only screen and (min-resolution: 192dpi) and (max-width: 1199px) {
   .hero {
@@ -35,7 +34,7 @@
   line-height: normal;
   text-align: start;
   letter-spacing: -0.32px;
-  color: $_header_color;
+  color: $_yellow_color;
   text-transform: capitalize; // Uncommenting text-transform to return to styling
 }
 .hero-text {
@@ -91,7 +90,6 @@
   .hero-text {
     font-size: 51px;
     line-height: normal;
-    color: $_main_color;
     margin-bottom: 36px;
   }
 }
