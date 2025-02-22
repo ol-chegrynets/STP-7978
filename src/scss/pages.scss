@@ -1,0 +1,114 @@
+.pages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // margin-top: 30px;
+  padding: 0 20px 40px 20px;
+}
+.pages-back-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+.pages-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+.pages-icon {
+  width: 7px;
+  height: 11px;
+}
+.pages-back-text {
+  display: none;
+}
+.pages-content {
+  padding: 20px 16px 20px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 160px;
+  border-radius: 20px;
+  background-color: $_yellow_color;
+}
+.pages-content-title {
+  font-size: 36px;
+  letter-spacing: 0.09px;
+  color: black;
+  margin-bottom: 20px;
+}
+.pages-title {
+  font-size: 26px;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: black;
+}
+.pages-text {
+  font-family: Prompt;
+  letter-spacing: 0.035px;
+  color: black;
+  margin-bottom: 20px;
+}
+.pages-list-text {
+  color: black;
+  margin-bottom: 20px;
+}
+@include media(desktop) {
+}
+.pages-container {
+  padding: 0 80px 60px 80px;
+}
+.pages-back-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+.pages-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+.pages-icon {
+  width: 7px;
+  height: 11px;
+}
+.pages-back-text {
+  display: none;
+}
+.pages-content {
+  padding: 0px 16px 20px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 160px;
+  border-radius: 20px;
+  background-color: $_yellow_color;
+}
+.pages-content-title {
+  font-size: 36px;
+  letter-spacing: 0.09px;
+  color: black;
+  margin-bottom: 20px;
+}
+.pages-title {
+  font-size: 26px;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: black;
+}
+.pages-text {
+  font-family: Prompt;
+  letter-spacing: 0.035px;
+  color: black;
+  margin-bottom: 20px;
+}
+.pages-list-text {
+  color: black;
+  margin-bottom: 20px;
+}
