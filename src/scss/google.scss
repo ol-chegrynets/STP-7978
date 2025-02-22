@@ -1,0 +1,71 @@
+.google-container {
+  background-image: url('../img/google/background.png');
+  background-color: #6c331e;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  @include media(desktop) {
+    background-image: url('../img/google/background-desk.png');
+  }
+}
+@media only screen and (min-resolution: 192dpi) and (max-width: 1199px) {
+  .google-container {
+    background-image: url('../img/google/background@2x.png');
+    @include media(desktop) {
+      background-image: url('../img/google/background-desk@2x.png');
+    }
+  }
+}
+.google-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  @include media(desktop) {
+    gap: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.google-title {
+  color: $_main_color;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0.032px;
+  @include media(desktop) {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+.google-title-weak {
+  color: $_main_color;
+  text-align: center;
+  font-family: Prompt;
+  font-size: 18px;
+  letter-spacing: 0.09px;
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+.google-button {
+  width: 140px;
+  height: 38px;
+  @include media(desktop) {
+    width: 200px;
+    height: 60px;
+  }
+}
+.google-button:active {
+  transform: scale(0.95);
+}
+
+.google-button:hover,
+.google-button:focus {
+  // box-shadow: 0 0 10px 5px rgba(252, 255, 255, 0.8);
+  opacity: 0.8;
+}
