@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/STP-7978/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-7978/assets/vendor-3ce0ac9c.js">
     <link rel="stylesheet" href="/STP-7978/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/STP-7978/assets/index-a277693f.css">
+    <link rel="stylesheet" href="/STP-7978/assets/index-a03f7bfa.css">
   </head>
 
   <body>
@@ -128,8 +128,8 @@
       <picture>
         <source
           srcset="
-            img/about/about-desc.png        1x,
-            img/about/about-desc.png@2x.jpg 2x
+            ./img/about/about-desc.png        1x,
+            ./img/about/about-desc.png@2x.jpg 2x
           "
           media="(min-width: 1200px)"
         />
@@ -139,7 +139,7 @@
         />
         <img
           class="about-picture"
-          src="img/about/about-desc.png"
+          src="/STP-7978/assets/about-desc-205725d9.png"
           alt="game hero"
         />
       </picture>
@@ -503,16 +503,29 @@
 
     </main>
 
-    <footer>
-  <p>Footer content goes here.</p>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <footer class="footer-section">
+  <div class="footer-container footer-flex">
+    <ul class="footer-list">
+      <li class="footer-item"><a href="./privacy.html">Privacy Policy</a></li>
+      <li class="footer-item"><a href="./terms.html">Terms & Conditions</a></li>
+      <li class="footer-item"><a href="./cookies.html">Cookies Policy</a></li>
     </ul>
-  </nav>
+    <div class="footer-rights">
+      <p class="footer-rights-text">
+        All Rights Reserved<a
+          class="footer-rights-text"
+          href="https://blazewinnerway.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          > blazewinnerway.com</a
+        >
+      </p>
+      <span class="footer-span">|</span>
+      <p class="footer-rights-text">2025</p>
+    </div>
+  </div>
 </footer>
+
 
     
   </body>
