@@ -42,8 +42,12 @@
 }
 
 .cookie-content {
-  max-width: 1200px;
+  max-width: 375px;
   margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 1200px;
+  }
 }
 
 .cookie-text {

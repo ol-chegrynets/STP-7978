@@ -7,11 +7,13 @@
 .faq-container {
   padding-left: 16px;
   padding-right: 16px;
-  max-width: 1200px;
+  max-width: 375px;
   margin: 0 auto;
 
   @include media(desktop) {
     padding-left: 80px;
+    padding-right: 80px;
+    max-width: 1200px;
   }
 }
 
