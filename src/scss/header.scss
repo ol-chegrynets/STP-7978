@@ -96,3 +96,25 @@
   border: none;
   cursor: pointer;
 }
+// ====================  Progress bar ====================
+
+.progress-bar {
+  height: 2px;
+  position: fixed;
+  top: 0;
+  z-index: 1000000;
+  background-color: $_yellow_color;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: progress-bar linear;
+  animation-timeline: scroll();
+  transition: scale 0.3s ease;
+}
+
+@keyframes progress-bar {
+  to {
+    scale: 1 1;
+  }
+}
+// ==================== Progress bar ====================
