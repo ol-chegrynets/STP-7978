@@ -1,12 +1,13 @@
 .container-description {
   padding-right: 16px;
   padding-left: 16px;
-  max-width: 1200px;
+  max-width: 375px;
   margin: 0 auto;
 
   @include media(desktop) {
     padding-right: 80px;
     padding-left: 80px;
+    max-width: 1200px;
   }
 }
 

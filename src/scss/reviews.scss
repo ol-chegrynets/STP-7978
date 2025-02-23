@@ -1,7 +1,9 @@
 .review-container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 375px;
+
   @include media(desktop) {
+    max-width: 1200px;
     padding-left: 80px;
   }
 }
@@ -48,11 +50,11 @@
 }
 
 .content {
-  padding: 10px 67px;
+  padding: 17px 67px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 180px;
+  max-height: 166px;
   height: 100%;
 
   @include media(desktop) {
@@ -99,18 +101,18 @@
   .swiper-slide:nth-child(1),
   .swiper-slide:nth-child(4) {
     background-image: linear-gradient(144deg, #000 0%, rgba(0, 0, 0, 0) 100%),
-      url('/img/reviewes/bg-1-desc.png');
+      url('/img/reviewes/bg-1-desk.png');
   }
 
   .swiper-slide:nth-child(2),
   .swiper-slide:nth-child(5) {
     background-image: linear-gradient(144deg, #000 0%, rgba(0, 0, 0, 0) 100%),
-      url('/img/reviewes/bg-2-desc.png');
+      url('/img/reviewes/bg-2-desk.png');
   }
 
   .swiper-slide:nth-child(3) {
     background-image: linear-gradient(144deg, #000 0%, rgba(0, 0, 0, 0) 100%),
-      url('/img/reviewes/bg-3-desc.png');
+      url('/img/reviewes/bg-3-desk.png');
   }
 }
 
@@ -120,17 +122,17 @@
   .swiper-slide:nth-child(1),
   .swiper-slide:nth-child(4) {
     background-image: linear-gradient(144deg, #000 0%, rgba(0, 0, 0, 0) 100%),
-      url('/img/reviewes/bg-1-desc@2x.png');
+      url('/img/reviewes/bg-1-desk@2x.png');
   }
 
   .swiper-slide:nth-child(2),
   .swiper-slide:nth-child(5) {
     background-image: linear-gradient(144deg, #000 0%, rgba(0, 0, 0, 0) 100%),
-      url('/img/reviewes/bg-2-desc@2x.png');
+      url('/img/reviewes/bg-2-desk@2x.png');
   }
 
   .swiper-slide:nth-child(3) {
     background-image: linear-gradient(144deg, #000 0%, rgba(0, 0, 0, 0) 100%),
-      url('/img/reviewes/bg-3-desc@2x.png');
+      url('/img/reviewes/bg-3-desk@2x.png');
   }
 }
