@@ -55,10 +55,13 @@
 }
 
 .header-dropdown {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 250ms linear, transform 250ms linear;
   position: fixed;
-  top: -100%;
+  top: 100%;
   right: 0;
-  transition: top 0.3s ease-in-out;
   z-index: 100;
   padding: 8px 16px 32px 32px;
   background-color: $_main_bg_color;
@@ -84,10 +87,18 @@
   font-weight: 500;
   font-size: 21px;
   letter-spacing: 0em;
+  transition: color 250ms linear;
+
+  &.active {
+    color: $_yellow_color;
+    font-weight: bold;
+  }
 }
 
 .header-dropdown.open {
-  top: 76px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .menu-close {

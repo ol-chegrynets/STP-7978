@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+.container.feature-container {
+  @include media(to-desktop) {
+    padding-top: 80px;
+  }
+}
+
 .feature-list {
   display: flex;
   flex-direction: column;

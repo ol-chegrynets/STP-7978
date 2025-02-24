@@ -54,9 +54,6 @@
     padding: 12px 16px;
   }
 }
-.us-item:hover {
-  transform: scale(1.03);
-}
 
 @include media(desktop) {
   .us-item:nth-child(1) {

@@ -92,22 +92,39 @@
 
 .cookie-btn {
   font-family: 'Prompt', sans-serif;
-  border: 1px solid #1d0000;
   border-radius: 12px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.01em;
-  color: inherit;
-  background-color: $_main_color;
   width: 106px;
   height: 44px;
   transition: all 250ms linear;
-}
 
-.cookie-btn:hover,
-.cookie-btn:focus {
-  background-color: #6c331e;
-  color: $_main_color;
-  border: none;
-  outline: none;
+  &.decline-btn {
+    color: inherit;
+    background-color: $_main_color;
+    border: 1px solid #1d0000;
+
+    &:hover,
+    &:focus {
+      background-color: #6c331e;
+      color: $_main_color;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &.accept-btn {
+    background-color: #6c331e;
+    color: $_main_color;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background-color: $_main_color;
+      color: inherit;
+      border: 1px solid #1d0000;
+      outline: none;
+    }
+  }
 }

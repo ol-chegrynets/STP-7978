@@ -3,6 +3,13 @@
   flex-direction: column;
 }
 
+.container.how-container {
+  @include media(to-desktop) {
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+}
+
 .how-list {
   display: flex;
   flex-direction: column;
