@@ -2,16 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blaze Union</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Prompt&display=swap"
       rel="stylesheet"
     />
-    <title>Blaze Union</title>
+    <link
+      rel="preload"
+      href="./img/hero/picture_hero.png"
+      as="image"
+      media="(max-width: 1199px)"
+    />
+    <link
+      rel="preload"
+      href="./img/hero/picture_hero_desk.png"
+      as="image"
+      media="(min-width: 1200px)"
+    />
     <link rel="stylesheet" href="./scss/styles.scss" />
+    <link rel="preload" href="./main.js" as="script" crossorigin="anonymous" />
   </head>
 
   <body>
@@ -34,6 +47,6 @@
     <load src="partials/footer.html" />
     <load src="partials/cookie-popup.html" />
 
-    <script type="module" src="./main.js"></script>
+    <script defer type="module" src="./main.js"></script>
   </body>
 </html>
