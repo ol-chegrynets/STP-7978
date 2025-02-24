@@ -7,22 +7,31 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @include media(desktop) {
+    gap: 40px;
+  }
 }
 .how-item {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .how-item:nth-child(even) {
   text-align: end;
 }
-.how-item:nth-child(odd) {
-  flex-direction: row-reverse;
-}
+
 .how-wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @include media(desktop) {
+    justify-content: space-between;
+    padding: 28px 20px;
+  }
 }
 .how-block-text {
   display: flex;
@@ -32,48 +41,33 @@
 .how-title {
   font-size: 26px;
   color: $_title_color;
+  @include media(desktop) {
+    font-size: 36px;
+  }
 }
 .how-text {
   letter-spacing: 0.035px;
   color: $_header_color;
+  @include media(desktop) {
+    font-size: 18px;
+    letter-spacing: 0.09px;
+  }
 }
 
 .how-image {
   width: 375px;
   height: 238px;
+  @include media(desktop) {
+    width: 490px;
+    height: 300px;
+  }
 }
 @include media(desktop) {
-  .how-list {
-    gap: 40px;
-  }
-  .how-item {
-    flex-direction: row;
-    justify-content: space-between;
-  }
   .how-item:nth-child(even) {
     text-align: end;
   }
   .how-item:nth-child(odd) {
     flex-direction: row-reverse;
-  }
-  .how-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 28px 20px;
-  }
-
-  .how-title {
-    font-size: 36px;
-  }
-  .how-text {
-    font-size: 18px;
-    letter-spacing: 0.09px;
-  }
-
-  .how-image {
-    width: 490px;
-    height: 300px;
   }
 }
 // =================== Transform ==================
